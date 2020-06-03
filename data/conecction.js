@@ -1,7 +1,7 @@
 const MongoClient = require('mongodb').MongoClient;
 const chalk = require('chalk');
-
-//const uri = "mongodb+srv://admin:betp2@cluster0-3bm3a.azure.mongodb.net/test?retryWrites=true&w=majority";
+const dotenv = require('dotenv');
+dotenv.config();
 
 const uri = process.env.MONGODB;
 
